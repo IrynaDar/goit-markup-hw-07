@@ -6,7 +6,7 @@
 .container-header {
   display: flex;
 }
-.header-logo {
+span.logo-color {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -15,10 +15,10 @@
   color: var(--accent-color); 
   margin-right: 93px;
 }
-.header-logo--color {
+.header__logo--color {
 color: var(--text-color);
 }
-.header-list__link {
+.header-link {
   display: block;
   padding: 32px 0;
   font-weight: 500;
@@ -33,13 +33,13 @@ color: var(--text-color);
       color: var(--accent-color);
 }
 }
-.header-list__item:not(:last-child) {
+.header-item:not(:last-child) {
   margin-right: 50px;
 }
 .header-list {
   display: flex;
 }
-.header__header-nav {
+.header-nav {
   display: flex;
   align-items: center;
 }
@@ -123,4 +123,4 @@ color: var(--text-color);
       &:hover, &:focus {
         fill: var(--accent-color);
       }
-}
+}}
