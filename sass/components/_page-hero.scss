@@ -16,23 +16,10 @@
   background-position: center;
   background-size: cover;
 }
-.hero__section {
-  background-color: $back-color;
-  text-align: center;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1600px;
-  min-height: 120px;
-  background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-    ), url("../images/bcground.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.hero__container {
+  display: block;
 }
-.hero-title {
+.hero__title {
 display: block;
 font-family: inherit;
 font-style: normal;
@@ -47,7 +34,7 @@ max-width: 696px;
 margin-left: auto;
 margin-right: auto;
 }
-.hero-btn {
+.hero__btn {
 min-width: 200px;
 min-height: 50px;
 left: 700px;
