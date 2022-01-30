@@ -2,7 +2,12 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.clients-title {
+.clients__container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.clients__title {
   font-family: inherit;
   font-style: normal;
   font-weight: bold;
@@ -17,11 +22,11 @@
   display: flex;
   justify-content: center;
 }
-.clients-item {
+.clients-list__item {
   & + & {
- margin-left: 30px; }
+  margin-left: 30px; }
 }
-.client-link {
+.clients-list__link {
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
@@ -40,7 +45,7 @@
 }
 }
 }
-.client-icon {
+.clients-list__icon {
   fill: $icon-color;
   transition-property: fill;
   transition-duration: 250ms;

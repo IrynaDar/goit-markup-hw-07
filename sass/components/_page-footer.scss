@@ -4,30 +4,30 @@
   padding-bottom: 60px;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
-span.part-color {
+span.footer__logo--color {
   color: $btn-color;
 }
 .footer-list {
   font-style: normal;
 }
-.footer-address {
+.footer-list__address {
   margin-top: 20px;
 }
-.footer-mail, .footer-tel {
+.footer-list__mail, .footer-list__tel {
   margin-top: 9px;
 }
-.link-address {
+.footer-list__link-address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $btn-color;
 }
-.link-email,
-.link-tell {
+.footer-list__link-email,
+.footer-list__link-tell {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -40,7 +40,7 @@ span.part-color {
       color: $second-text-color;
     }
 }
-.social-invite {
+.socials__title {
   display: block;
   font-family: inherit;
   font-style: normal;
@@ -52,24 +52,24 @@ span.part-color {
   color: $btn-color;
   margin-bottom: 20px;
 }
-.footer-continfo {
+.footer-continfo__address {
   max-width: 231px;
 }
-.footer-socials {
+.socials {
   display: inline-block;
   max-width: 206px;
   margin-left: 70px;
 }
-.company-soc-list {
+.socials-list {
   display: flex;
   justify-content: center;
 }
-.company-soc-item {
+.socials-list__item {
   & + & {
   margin-left: 10px;
   }
 }
-.company-soc-link {
+.socials-list__link {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -85,7 +85,7 @@ background-color: $accent-color;
   }
 }
 
-.company-soc-icon {
+.socials-list__icon {
   fill: $btn-color;
 }
 
@@ -93,7 +93,7 @@ background-color: $accent-color;
   display: block;
   margin-left: 93px;
 }
-.footer-label {
+.footer-form__label {
   font-family: inherit;
   font-style: normal;
   font-weight: bold;
@@ -103,13 +103,13 @@ background-color: $accent-color;
   text-transform: uppercase;
   color: $btn-color;
 }
-.footer-form-block {
+.footer-form__block {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
 }
-.footer-input {
+.footer-form__input {
   margin-right: 12px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -133,7 +133,7 @@ background-color: $accent-color;
         color: $accent-color;   
     }
 }
-.form-footer-button {
+.footer-form__button {
   min-width: 200px;
   min-height: 50px;
   left: 700px;
@@ -160,6 +160,6 @@ background-color: $accent-color;
     background-color: $back-color;
     }
 }
-.footer-icon {
+.footer-form__icon {
   margin-left: 10px;
 }

@@ -44,10 +44,10 @@ ul {
 .header-list__link,
 .header-mail__mail,
 .header-tel__tel,
-.footer-logo,
-.link-address,
-.link-email,
-.link-tell {
+.footer__logo,
+.footer-list__link-address,
+.footer-list__link-email,
+.footer-list__link-tell {
   text-decoration: none;
 }
 
@@ -297,10 +297,12 @@ span.header-nav__logo--color {
 
 .header-nav {
   display: flex;
+  margin-right: auto;
+  justify-content: center;
   align-items: center;
 }
 
-.header-item {
+.header-list__item {
   display: block;
   padding: 32px 0;
   font-weight: 500;
@@ -313,11 +315,11 @@ span.header-nav__logo--color {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-item:hover, .header-item:focus {
+.header-list__item:hover, .header-list__item:focus {
   color: #2196F3;
 }
 
-.header-item:not(:last-child) {
+.header-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -348,7 +350,7 @@ span.header-nav__logo--color {
   bottom: 0;
 }
 
-.current .header__cont {
+.current .connection {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -594,6 +596,7 @@ span.header-nav__logo--color {
 }
 
 .team__container {
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -612,7 +615,7 @@ span.header-nav__logo--color {
   margin-right: 0px;
 }
 
-.team-list__team-item .team__title {
+.team__title {
   font-family: inherit;
   font-weight: 700;
   font-size: 36px;
@@ -621,9 +624,10 @@ span.header-nav__logo--color {
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 50px;
+  align-items: center;
 }
 
-.team-list__team-item .team-item__member {
+.team-item__member {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -633,7 +637,7 @@ span.header-nav__logo--color {
   margin-bottom: 10px;
 }
 
-.team-list__team-item .team-item__position {
+.team-item__position {
   font-family: inherit;
   font-size: 16px;
   line-height: 19px;
@@ -643,7 +647,7 @@ span.header-nav__logo--color {
   margin-bottom: 16px;
 }
 
-.team-list__team-item .team-item__asign {
+.team-item__asign {
   background-color: #FFFFFF;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -654,16 +658,16 @@ span.header-nav__logo--color {
   border-bottom-color: #757575;
 }
 
-.team-list__team-item .social {
+.social {
   display: flex;
   justify-content: center;
 }
 
-.team-list__team-item .social__item + .team-list__team-item .social__item {
+.social__item + .social__item {
   margin-left: 10px;
 }
 
-.team-list__team-item .social__link {
+.social__link {
   width: 44px;
   height: 44px;
   background-color: #FFFFFF;
@@ -676,15 +680,15 @@ span.header-nav__logo--color {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-list__team-item .social__link:hover, .team-list__team-item .social__link:focus {
+.social__link:hover, .social__link:focus {
   background-color: #2196F3;
 }
 
-.team-list__team-item .social__link:hover.team-soc-icon, .team-list__team-item .social__link:focus.team-soc-icon {
+.social__link:hover.team-soc-icon, .social__link:focus.team-soc-icon {
   fill: #FFFFFF;
 }
 
-.team-list__team-item .social__icon {
+.social__icon {
   fill: #AFB1B8;
   transition-property: fill;
   transition-duration: 250ms;
@@ -696,7 +700,13 @@ span.header-nav__logo--color {
   padding-bottom: 94px;
 }
 
-.clients-title {
+.clients__container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clients__title {
   font-family: inherit;
   font-style: normal;
   font-weight: bold;
@@ -713,11 +723,11 @@ span.header-nav__logo--color {
   justify-content: center;
 }
 
-.clients-item + .clients-item {
+.clients-list__item + .clients-list__item {
   margin-left: 30px;
 }
 
-.client-link {
+.clients-list__link {
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
@@ -731,15 +741,15 @@ span.header-nav__logo--color {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-link:hover, .client-link:focus {
+.clients-list__link:hover, .clients-list__link:focus {
   border-color: #2196F3;
 }
 
-.client-link:hover.client-icon, .client-link:focus.client-icon {
+.clients-list__link:hover.client-icon, .clients-list__link:focus.client-icon {
   fill: #2196F3;
 }
 
-.client-icon {
+.clients-list__icon {
   fill: #AFB1B8;
   transition-property: fill;
   transition-duration: 250ms;
@@ -752,12 +762,12 @@ span.header-nav__logo--color {
   padding-bottom: 60px;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
 
-span.part-color {
+span.footer__logo--color {
   color: #FFFFFF;
 }
 
@@ -765,23 +775,23 @@ span.part-color {
   font-style: normal;
 }
 
-.footer-address {
+.footer-list__address {
   margin-top: 20px;
 }
 
-.footer-mail, .footer-tel {
+.footer-list__mail, .footer-list__tel {
   margin-top: 9px;
 }
 
-.link-address {
+.footer-list__link-address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #FFFFFF;
 }
 
-.link-email,
-.link-tell {
+.footer-list__link-email,
+.footer-list__link-tell {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -792,13 +802,13 @@ span.part-color {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-email:hover, .link-emailfocus,
-.link-tell:hover,
-.link-tellfocus {
+.footer-list__link-email:hover, .footer-list__link-emailfocus,
+.footer-list__link-tell:hover,
+.footer-list__link-tellfocus {
   color: #757575;
 }
 
-.social-invite {
+.socials__title {
   display: block;
   font-family: inherit;
   font-style: normal;
@@ -811,26 +821,26 @@ span.part-color {
   margin-bottom: 20px;
 }
 
-.footer-continfo {
+.footer-continfo__address {
   max-width: 231px;
 }
 
-.footer-socials {
+.socials {
   display: inline-block;
   max-width: 206px;
   margin-left: 70px;
 }
 
-.company-soc-list {
+.socials-list {
   display: flex;
   justify-content: center;
 }
 
-.company-soc-item + .company-soc-item {
+.socials-list__item + .socials-list__item {
   margin-left: 10px;
 }
 
-.company-soc-link {
+.socials-list__link {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -843,11 +853,11 @@ span.part-color {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.company-soc-link:hover, .company-soc-link:focus {
+.socials-list__link:hover, .socials-list__link:focus {
   background-color: #2196F3;
 }
 
-.company-soc-icon {
+.socials-list__icon {
   fill: #FFFFFF;
 }
 
@@ -856,7 +866,7 @@ span.part-color {
   margin-left: 93px;
 }
 
-.footer-label {
+.footer-form__label {
   font-family: inherit;
   font-style: normal;
   font-weight: bold;
@@ -867,14 +877,14 @@ span.part-color {
   color: #FFFFFF;
 }
 
-.footer-form-block {
+.footer-form__block {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-.footer-input {
+.footer-form__input {
   margin-right: 12px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -896,11 +906,11 @@ span.part-color {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-input:hover::placeholder, .footer-input:focus::placeholder {
+.footer-form__input:hover::placeholder, .footer-form__input:focus::placeholder {
   color: #2196F3;
 }
 
-.form-footer-button {
+.footer-form__button {
   min-width: 200px;
   min-height: 50px;
   left: 700px;
@@ -925,17 +935,23 @@ span.part-color {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-footer-button:hover, .form-footer-button:focus {
+.footer-form__button:hover, .footer-form__button:focus {
   background-color: #2F303A;
 }
 
-.footer-icon {
+.footer-form__icon {
   margin-left: 10px;
 }
 
-.portfolio-info {
+.portfolio__info {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.portfolio__container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-btn {
@@ -1029,11 +1045,6 @@ span.part-color {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.port-project:hover.portfolio-img-text, .port-project:focus.portfolio-img-text {
-  transform: translateY(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .portfolio-img-wrap {
   position: relative;
   overflow: hidden;
@@ -1052,6 +1063,11 @@ span.part-color {
   width: 100%;
   height: 100%;
   transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.port-project:hover .portfolio-img-text {
+  transform: translateY(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*# sourceMappingURL=main.css.map */

@@ -4,6 +4,7 @@
   padding-bottom: 94px;
 }
 .team__container {
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -17,6 +18,7 @@
       &:nth-child(4n) {
   margin-right: 0px;
 }
+}
 .team__title {
   font-family: inherit;
   font-weight: 700;
@@ -26,6 +28,7 @@
   letter-spacing: 0.03em;
   color: $text-color;
   margin-bottom: 50px;
+  align-items: center;
 }
 .team-item__member {
   font-family: inherit;
@@ -87,5 +90,4 @@ margin-left: 10px;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 }
