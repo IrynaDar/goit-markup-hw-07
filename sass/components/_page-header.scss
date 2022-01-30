@@ -22,7 +22,7 @@ color: $text-color;
   display: flex;
   align-items: center;
 }
-.header-list__link {
+.header-list__item {
   display: block;
   padding: 32px 0;
   font-weight: 500;
@@ -68,12 +68,12 @@ color: $text-color;
   align-items: center;
   margin-left: auto;
 }
-.header-mail__mail, .header-tel__tel {
+.headder-mail, .header-tel {
   display: flex;
   align-items: center;
 }
-.header-mail__mail,
-.header-tel__tel {
+.link-mail,
+.link-tel {
   font-family: inherit;
   font-weight: 500;
   font-style: normal;
@@ -90,14 +90,14 @@ color: $text-color;
       color: $accent-color;
     }
 }
-.header-mail__mail:hover .header-mail__icon,
-.header-mail__mail:focus .header-mail__icon,
-.header-tel__tel:hover .header-tel__icon,
-.header-tel__tel:focus .header-tel__icon {
+.link-mail:hover .mail-icon,
+.link-mail:focus .mail-icon,
+.link-tel:hover .phone-icon,
+.link-tel:focus .phone-icon {
   fill: $accent-color;
 }
 
-.header-mail__icon {
+.mail-icon {
   display: flex; 
   margin-right: 10px;
   fill: $second-text-color;
@@ -109,7 +109,7 @@ color: $text-color;
       }
 }
 
-.phone-icon {
+.tel-icon {
   display: flex;
   margin-right: 10px;
   margin-left: 30px;
@@ -117,7 +117,7 @@ color: $text-color;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      &:hover, &:focus {
-        fill: $accent-color;
-      }
+  &:hover, &:focus {
+  fill: $accent-color;
+  }
 }
