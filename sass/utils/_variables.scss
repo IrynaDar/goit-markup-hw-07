@@ -1,13 +1,13 @@
 :root {
-    --back-color:#2F303A;
-    --second-back-color:#F5F4FA;
-    --accent-color: #2196F3;
-    --text-color: #212121;
-    --second-text-color: #757575;
-    --btn-color: #FFFFFF;
-    --border-color: #EEEEEE;
-    --bottom-border-color: #ECECEC;
-    --icon-color: #AFB1B8;
+    $back-color:#2F303A;
+    $second-back-color:#F5F4FA;
+    $accent-color: #2196F3;
+    $text-color: #212121;
+    $second-text-color: #757575;
+    $btn-color: #FFFFFF;
+    $border-color: #EEEEEE;
+    $bottom-border-color: #ECECEC;
+    $icon-color: #AFB1B8;
 }
 
 button {
@@ -19,5 +19,5 @@ img {
 
 body {
 font-family: Roboto, Raleway, sans-serif; ;
-color: var(--text-color);
+color: $text-color;
 }

@@ -1,5 +1,5 @@
 .team {
-  background-color: var(--second-back-color);
+  background-color: $second-back-color;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -22,7 +22,7 @@
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--text-color);
+  color: $text-color;
   margin-bottom: 50px;
 }
 .team-member {
@@ -40,18 +40,18 @@
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--second-text-color);
+  color: $second-text-color;
   margin-bottom: 16px;
 }
 .picture-asign {
-  background-color: var(--btn-color);
+  background-color: $btn-color;
   padding-bottom: 30px;
   padding-top: 30px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  border-bottom-color:var(--second-text-color)
+  border-bottom-color: $second-text-color;
 }
 
 .team-soc-list {
@@ -66,7 +66,7 @@ margin-left: 10px;
 .team-soc-link {
   width: 44px;
   height: 44px;
-  background-color: var(--btn-color);
+  background-color: $btn-color;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,14 +75,14 @@ margin-left: 10px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       &:hover, &:focus {
-      background-color: var(--accent-color);
+      background-color: $accent-color;
             &.team-soc-icon {
-            fill: var(--btn-color);
+            fill: $btn-color;
 }
 }
 }
 .team-soc-icon {
-  fill: var(--icon-color);
+  fill: $icon-color;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
