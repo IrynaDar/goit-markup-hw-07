@@ -1,8 +1,7 @@
 .header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: v$bottom-border-color;
-
+  border-bottom-color: $bottom-border-color;
 }
 .container__header {
   display: flex;
@@ -22,7 +21,7 @@ color: $text-color;
   display: flex;
   align-items: center;
 }
-.header-list__item {
+.header-item {
   display: block;
   padding: 32px 0;
   font-weight: 500;
@@ -37,7 +36,8 @@ color: $text-color;
       color: $accent-color;
 }
 }
-.header-list__item:not(:last-child) {
+
+.header-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -62,6 +62,7 @@ color: $text-color;
     background-color: $accent-color;
     left: 0;
     bottom: 0;
+  }
 }
 .header__cont {
   display: flex;
@@ -118,6 +119,6 @@ color: $text-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover, &:focus {
-  fill: $accent-color;
+    fill: $accent-color;
   }
 }
