@@ -142,7 +142,7 @@ background-color: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
-  color: $btn-color);
+  color: $btn-color;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -157,7 +157,7 @@ background-color: $accent-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, &:focus {
-    background-color: var(--back-color);
+    background-color: $back-color;
     }
 }
 .footer-icon {
