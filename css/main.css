@@ -40,10 +40,10 @@ ul {
   list-style: none;
 }
 
-.header-logo,
-.header-link,
-.link-mail,
-.link-tel,
+.header-nav__logo,
+.header-list__link,
+.header-mail__mail,
+.header-tel__tel,
 .footer-logo,
 .link-address,
 .link-email,
@@ -291,7 +291,16 @@ span.header-nav__logo--color {
   color: #212121;
 }
 
-.header-link {
+.header-list {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-list__link {
   display: block;
   padding: 32px 0;
   font-weight: 500;
@@ -304,26 +313,12 @@ span.header-nav__logo--color {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link:hover, .header-link:focus {
+.header-list__link:hover, .header-list__link:focus {
   color: #2196F3;
 }
 
-.header-item:not(:last-child) {
+.header-list__item:not(:last-child) {
   margin-right: 50px;
-}
-
-.header-list {
-  display: flex;
-}
-
-.header-nav {
-  display: flex;
-  align-items: center;
-}
-
-.header-cont {
-  display: flex;
-  margin-left: auto;
 }
 
 .current {
@@ -353,13 +348,13 @@ span.header-nav__logo--color {
   bottom: 0;
 }
 
-.current .header-mail, .current .header-tel {
+.current .header-mail__mail, .current .header-tel__tel {
   display: flex;
   align-items: center;
 }
 
-.current .link-mail,
-.current .link-tel {
+.current .header-mail__mail,
+.current .header-tel__tel {
   font-family: inherit;
   font-weight: 500;
   font-style: normal;
@@ -374,20 +369,20 @@ span.header-nav__logo--color {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current .link-mail:hover, .current .link-mail:focus,
-.current .link-tel:hover,
-.current .link-tel:focus {
+.current .header-mail__mail:hover, .current .header-mail__mail:focus,
+.current .header-tel__tel:hover,
+.current .header-tel__tel:focus {
   color: #2196F3;
 }
 
-.current .link-mail:hover .mail-icon,
-.current .link-mail:focus .mail-icon,
-.current .link-tel:hover .phone-icon,
-.current .link-tel:focus .phone-icon {
+.current .header-mail__mail:hover .header-mail__icon,
+.current .header-mail__mail:focus .header-mail__icon,
+.current .header-tel__tel:hover .header-tel__icon,
+.current .header-tel__tel:focus .header-tel__icon {
   fill: #2196F3;
 }
 
-.current .mail-icon {
+.current .header-mail__icon {
   display: flex;
   margin-right: 10px;
   fill: #757575;
@@ -396,7 +391,7 @@ span.header-nav__logo--color {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current .mail-icon:hover, .current .mail-icon:focus {
+.current .header-mail__icon:hover, .current .header-mail__icon:focus {
   fill: #2196F3;
 }
 

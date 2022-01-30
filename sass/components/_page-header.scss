@@ -15,7 +15,14 @@
 span.header-nav__logo--color {
 color: $text-color;
 }
-.header-link {
+.header-list {
+  display: flex;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-list__link {
   display: block;
   padding: 32px 0;
   font-weight: 500;
@@ -30,19 +37,8 @@ color: $text-color;
       color: $accent-color;
 }
 }
-.header-item:not(:last-child) {
+.header-list__item:not(:last-child) {
   margin-right: 50px;
-}
-.header-list {
-  display: flex;
-}
-.header-nav {
-  display: flex;
-  align-items: center;
-}
-.header-cont {
-  display: flex;
-  margin-left: auto;
 }
 
 .current {
@@ -67,13 +63,17 @@ color: $text-color;
     left: 0;
     bottom: 0;
 }
+.header__cont {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
-.header-mail, .header-tel {
+.header-mail__mail, .header-tel__tel {
   display: flex;
   align-items: center;
 }
-.link-mail,
-.link-tel {
+.header-mail__mail,
+.header-tel__tel {
   font-family: inherit;
   font-weight: 500;
   font-style: normal;
@@ -90,14 +90,14 @@ color: $text-color;
       color: $accent-color;
     }
 }
-.link-mail:hover .mail-icon,
-.link-mail:focus .mail-icon,
-.link-tel:hover .phone-icon,
-.link-tel:focus .phone-icon {
+.header-mail__mail:hover .header-mail__icon,
+.header-mail__mail:focus .header-mail__icon,
+.header-tel__tel:hover .header-tel__icon,
+.header-tel__tel:focus .header-tel__icon {
   fill: $accent-color;
 }
 
-.mail-icon {
+.header-mail__icon {
   display: flex; 
   margin-right: 10px;
   fill: $second-text-color;
@@ -120,4 +120,4 @@ color: $text-color;
       &:hover, &:focus {
         fill: $accent-color;
       }
-}}
+}
