@@ -26,6 +26,9 @@ color: $text-color;
 .header-list__item {
   display: block;
   padding: 32px 0;
+}
+.header-list__link{
+  font-family: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -46,7 +49,7 @@ color: $text-color;
 .current {
   color: $accent-color;
   position: relative;
-    &:after {
+    &::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -54,65 +57,54 @@ color: $text-color;
   border-radius: 2px;
   background-color: $accent-color;
   left: 0;
-  bottom: 0;
-    &::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: $accent-color;
-    left: 0;
-    bottom: 0;
+  bottom: -32px;
   }
 }
-.connection {
+
+.header-contacts {
   display: flex;
-  align-items: center;
   margin-left: auto;
-}
-.headder-mail, .header-tel {
-  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.link-mail,
-.link-tel {
+.header-mail, .header-tel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-mail__link,
+.header-tel__link {
   font-family: inherit;
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color:$second-text-color;
+  color: $second-text-color;
   display: flex ;
   justify-content: center;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover, &:focus {
-      color: $accent-color;
-    }
-}
-.link-mail:hover .mail-icon,
-.link-mail:focus .mail-icon,
-.link-tel:hover .phone-icon,
-.link-tel:focus .phone-icon {
-  fill: $accent-color;
+  &:hover, &:focus {
+    color: $accent-color;
+  }
 }
 
-.mail-icon {
+
+.header-mail__icon {
   display: flex; 
   margin-right: 10px;
   fill: $second-text-color;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      &:hover, &:focus {
-        fill: $accent-color;
-      }
+    &:hover, &:focus {
+      fill: $accent-color;
+    }
 }
 
-.tel-icon {
+.header-tel__icon {
   display: flex;
   margin-right: 10px;
   margin-left: 30px;
@@ -120,7 +112,15 @@ color: $text-color;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover, &:focus {
-    fill: $accent-color;
-  }
-}}
+    &:hover, &:focus {
+      fill: $accent-color;
+    }
+}
+
+
+.header-mail__link:hover .header-mail__icon,
+.header-mail__link:focus .header-mail__icon,
+.header-tel__link:hover .header-tel__icon,
+.header-tel__link:focus .header-tel__icon {
+  fill: $accent-color;
+}
